@@ -11,7 +11,7 @@ $(document).ready(function(){
                 $poetry.append($row);
             }
             $el = $('<div class="col-md-4 col-sm-6 poem"></div>');
-            $el.append('<h3>' + data[i].title + '</h3>');
+            $el.append('<h3 class="pink">' + data[i].title + '</h3>');
             $el.append('<h6>' + data[i].date.toUpperCase() + '</h6>');
             $el.append('<p>' + data[i].body + '</p>');
             $row.append($el);
@@ -23,7 +23,7 @@ $(document).ready(function(){
         var $el;
         for (j=0; j<data.length; j++) {
             $el = $('<div class="col-sm-12 prose"></div>');
-            $el.append('<h3>' + data[j].title + '</h3>');
+            $el.append('<h3 class="pink">' + data[j].title + '</h3>');
             $el.append('<h6>' + data[j].date.toUpperCase() + '</h6>');
             $el.append('<p>' + data[j].body + '</p>');
             var $row = $('<div class="row"></div>');
@@ -36,4 +36,7 @@ $(document).ready(function(){
             }
         }
     });
+    setInterval(function(){
+        $('h1').toggleClass('pink');
+    }, 3000);
 });

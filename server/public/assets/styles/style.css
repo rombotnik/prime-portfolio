@@ -13,11 +13,13 @@ h1 {
     color: #111;
     text-shadow: 2px 2px 2px #333;
     line-height: 125px;
+    transition: all 2s;
 }
 
-h1:hover, h2:hover, h3:hover {
+.pink {
     color: #ee8b9d;
     text-shadow: 2px 2px 2px #000;
+    transition: all 2s;
 }
 
 h6 {

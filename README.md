@@ -9,6 +9,6 @@ All writing will have a title, date, and body content to display.
 A background image will be added to make the site look pretty, and a theme from Bootswatch will be chosen.
 
 ### Amendment 1
-A decent background image could not be found; however, the site has been approved by the developer's neighbor Kelly and so its design will remain as-is.
+A decent background image could not be found; however, the site has been approved by the developer's neighbor Kelly. On her recommendations, instead of a background image, the color of the headers will change colors gradually.
 
-Contact information will be added below the header.
+Social media links will be added to the header.

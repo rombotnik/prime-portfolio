@@ -12,8 +12,13 @@ h1 {
     font-size: 48px;
     color: #111;
     text-shadow: 2px 2px 2px #333;
-    line-height: 125px;
+    line-height: 100px;
     transition: all 2s;
+}
+
+header ul img {
+    width: 32px;
+    margin: -15px 0 20px;
 }
 
 .pink {

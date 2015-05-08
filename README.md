@@ -1,14 +1,22 @@
-### Overview
-A simple portfolio display using Bootstrap and jQuery, hosted on Heroku. 
+### Rom Writes Things
+A simple portfolio display using Bootstrap and jQuery, hosted on Heroku. It doesn't do anything too fancy. The prose and poetry are hosted server-side. When `index.html` is loaded the app sends two requests to the server: `GET /prose` and `GET /poetry`; the result is then formatted and displayed into divs appropriately. I didn't put much in, but it can support more writing than what's hosted on the server.
 
-### Specifications
-There will be both prose and poetry available. Poetry will be displayed 3 columns at a time, and prose displayed taking up the entire width of the container.
+### My Poetry
+Yes, I wrote this in high school. I was a gloomy kid.
 
-All writing will have a title, date, and body content to display.
+### Rainbows
+The app loops through an array of colors, tracking a colorIndex to remember which color it's on. Every 3 seconds, the color transitions to a new one, animated via the CSS3 `transition` property.
 
-A background image will be added to make the site look pretty, and a theme from Bootswatch will be chosen.
+### Notes
+If I were to keep working on this, these are some things I'd like to do:
 
-### Amendment 1
-A decent background image could not be found; however, the site has been approved by the developer's neighbor Kelly. On her recommendations, instead of a background image, the color of the headers will change colors gradually.
+- Create separate sections for writing, code, and my resume
+- Give the app a glossier feeling; update styling so it's more unique
+- Add additional contact info
+- Add more content
+- Move prose/poetry OUT of `server/app.js` so I can include more; have a way to get those files easily
 
-Social media links will be added to the header.
+Mostly, I'm just excited to go back to working with (and/or making) APIs. I have a lot of ideas, and I look forward to making them happen.
+
+### Contact
+romney.stevens@gmail.com

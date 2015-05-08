@@ -39,8 +39,11 @@ $(document).ready(function(){
         }
     });
     setInterval(function(){
-        var color = colors[colorIndex % colors.length];
+        var color = colors[colorIndex];
         $('.rainbow').css({color:color});
         colorIndex++;
+        if (colorIndex == colors.length) {
+            colorIndex = 0;
+        }
     }, 3000);
 });

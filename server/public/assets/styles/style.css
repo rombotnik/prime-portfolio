@@ -1,8 +1,17 @@
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
 h1, h2, h3 {
     font-family: Montserrat, Arial, sans-serif;
 }
 
-.js-poem {
-    max-height: 300px;
+.poem {
+    height: 300px;
+    overflow: auto;
+}
+
+.prose {
+    max-height: 600px;
     overflow: auto;
 }

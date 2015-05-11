@@ -1,6 +1,7 @@
 var express = require('express');
 var path = require('path');
 var app = express();
+var makePrompt = require('./prompt');
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -12,6 +13,11 @@ app.get('/writing', function(req, res){
 // Sends specific piece data to the client: e.g. /writing/campfire.txt
 app.get('/writing/*', function(req, res){
     res.sendFile(path.join(__dirname, 'data', req.params[0]));
+});
+
+// Delivers a writing prompt to the client
+app.get('/prompt', function(req, res){
+    res.send(makePrompt());
 });
 
 // Catch-all for other requests

@@ -54,6 +54,7 @@ function displayStories() {
         $story.find('.story-title').text(storyData[i].title);
         $story.find('.story-date').text(storyData[i].date);
         $story.find('.story-description').text(storyData[i].description);
+        // Note: we use 'pre' to preserve line spacing in text files ... however, it's not perfect
         $story.find('pre').append(storyContents[i]);
         $main.append($story);
     }
@@ -72,4 +73,11 @@ $(document).ready(function(){
             colorIndex = 0;
         }
     }, 3000);
+
+    // Generates a random writing prompt
+    $('.prompt').click(function(){
+        $.get('/prompt', function(data){
+            $('.prompt').text(data);
+        });
+    });
 });

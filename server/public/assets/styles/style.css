@@ -48,4 +48,9 @@ pre {
     font-family: "Open Sans", Arial, sans-serif;
     padding: 0;
     white-space: pre-wrap;
+    color: #f5f5f5;
+}
+
+.prompt {
+    cursor: pointer;
 }

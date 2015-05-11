@@ -4,12 +4,9 @@ var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
-app.get('/poetry', function(req, res){
-    res.send(poetry);
-});
-
-app.get('/prose', function(req, res){
-    res.send(prose);
+// Sends writing data to the client
+app.get('/writing', function(req, res){
+    res.sendFile(path.join(__dirname, 'data', 'data.json'));
 });
 
 app.get('/*', function(req, res){

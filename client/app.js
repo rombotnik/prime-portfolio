@@ -4,25 +4,13 @@ var colorIndex = 1;
 
 $(document).ready(function(){
     $.get('/writing', function(data){
-        //var $proseFeatured = $('.js-prose-featured');
-        //var $prose = $('.js-prose');
-        //var $el;
-        //for (j=0; j<data.length; j++) {
-        //    $el = $('<div class="col-sm-12 prose"></div>');
-        //    $el.append('<h3 class="rainbow">' + data[j].title + '</h3>');
-        //    $el.append('<h6>' + data[j].date.toUpperCase() + '</h6>');
-        //    $el.append('<p>' + data[j].body + '</p>');
-        //    var $row = $('<div class="row"></div>');
-        //    $row.append($el);
-        //    if (j == 0) {
-        //        $proseFeatured.append($row);
-        //    }
-        //    else {
-        //        $prose.append($row);
-        //    }
-        //}
         console.log(data);
+        $.get('/writing/' + data.writing[0].file, function(data){
+            console.log(data);
+        });
     });
+
+    // Makes rainbows out of the headers
     setInterval(function(){
         var color = colors[colorIndex];
         $('.rainbow').css({color:color});

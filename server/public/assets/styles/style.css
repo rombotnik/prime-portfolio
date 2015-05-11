@@ -37,12 +37,15 @@ h6 {
     border-radius: 5px;
 }
 
-.poem {
-    height: 300px;
+.story-body {
     overflow: auto;
+    height: 300px;
 }
 
-.prose {
-    max-height: 600px;
-    overflow: auto;
+pre {
+    background: none;
+    border: none;
+    font-family: "Open Sans", Arial, sans-serif;
+    padding: 0;
+    white-space: pre-wrap;
 }

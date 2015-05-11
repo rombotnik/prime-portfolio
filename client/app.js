@@ -34,7 +34,7 @@ function setup() {
 }
 
 function getWriting() {
-    $.get('/writing/' + filesToGet.pop(), function(text){
+    $.get('/writing/' + filesToGet.shift(), function(text){
         console.log('Getting writing');
         storyContents.push(text);
         if (filesToGet.length > 0) {
